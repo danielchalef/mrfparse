@@ -8,7 +8,7 @@
 Features:
 
 - Outputs to a parquet dataset, allowing easy ingestion into data warehouses and data lakes.
-- Supports reading from HTTP, and S3 / GS cloud storage, and writing to S3 / GS cloud storage AWS cloud storage buckets.
+- Supports reading from HTTP, and S3 / GS cloud storage, and writing to S3 / GS cloud storage buckets.
 - Filter for a subset of CPT/HSPCS service codes (provided as a simple CSV file).
 - Filters for only providers for whom pricing data is present in the MRF file, dropping extranous provider data.
 - Supports reading Gzip compressed MRF files.
