@@ -1,0 +1,10 @@
+log:
+  level: info
+services:
+  file: services.csv
+writer:
+  max_rows_per_file: 100_000_000
+  filename_template: "_%04d.zstd.parquet"
+  max_rows_per_group: 1_000_000
+tmp:
+  path: /tmp

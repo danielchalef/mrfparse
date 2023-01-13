@@ -1,0 +1,494 @@
+billing_code,description,plain_language_description
+J0702,BETAMETHASONE ACET&SOD PHOSP,Injection to treat reaction to a drug
+J1745,INFLIXIMAB NOT BIOSIMIL 10MG,A biologic medication
+G0102,Prostate cancer screening; digital rectal examination,Prostate cancer screening; digital rectal examination
+G0103,Prostate cancer screening; prostate specific antigen test (psa),Prostate cancer screening; prostate specific antigen test (psa)
+G0121,Colon ca scrn; not hi risk ind,Colorectal cancer screening; colonoscopy on individual not meeting criteria for high risk
+G0105,Colorectal ca scrn; hi risk ind,Colorectal cancer screening; colonoscopy on individual at high risk
+S0285,Cnslt before screen colonosc,Colonoscopy consultation performed prior to a screening colonoscopy procedure
+G0289,"Arthro, loose body + chondro","Arthroscopy, knee, surgical, for removal of loose body, foreign body, debridement/shaving of articular cartilage (chondroplasty) at the time of other surgical knee arthroscopy in a different compartment of the same knee"
+G0120,Colon ca scrn; barium enema,"Colorectal cancer screening; alternative to g0105, screening colonoscopy, barium enema"
+460,SPINAL FUSION (POSTERIOR),Spinal fusion except cervical
+470,KNEE REPLACEMENT,Major joint replacement or reattachment of lower extremity
+473,SPINAL FUSION (ANTERIOR),Cervical spinal fusion
+743,HYSTERECTOMY,Uterine and adnexa procedures for non-malignancy
+1960,Anesthesia for vaginal delivery,Anesthesia for vaginal delivery
+1961,Anesthesia for cesarean delivery,Anesthesia for cesarean delivery
+1967,Anesthesia for labor during planned vaginal delivery,Anesthesia for labor during planned vaginal delivery
+1968,Anesthesia for cesarean delivery following labor,Anesthesia for cesarean delivery following labor
+10005,FNA W IMAGE,"Fine needle aspiration biopsy, including ultrasound guidance; first lesion"
+10021,FNA W/O IMAGE,Fine Needle Aspiration Biopsy without imaging
+10040,ACNE SURGERY,"Incision and Drainage Procedures on the Skin, Subcutaneous and Accessory Structures"
+10060,DRAINAGE OF SKIN ABSCESS,Incision and drainage of abscess; simple or single and complex or multiple
+10140,DRAINAGE OF HEMATOMA/FLUID,"Incision and drainage of hematoma, seroma or fluid collection"
+10160,PUNCTURE DRAINAGE OF LESION,"Puncture aspiration of abscess, hematoma, bulla, or cyst"
+11000,DEBRIDE INFECTED SKIN,Removal of infected skin
+11056,TRIM SKIN LESIONS 2 TO 4,Paring or cutting of benign hyperkeratotic lesion
+11102,BIOPSY SKIN LESION,"Tangential biopsy of skin (e.g., for example, shave, scoop, saucerize, curette); single lesion"
+11103,BIOPSY SKIN ADD-ON,"Tangential biopsy of skin (e.g., for example, shave, scoop, saucerize, curette); each separate/additional lesion"
+11200,REMOVAL OF SKIN TAGS <W/15,"Removal of skin tags, multiple fibrocutaneous tags, any area"
+11401,EXC TR-EXT B9+MARG 0.6-1 CM,Under Excision-Benign Lesions Procedures on the Skin 0.6-1 CM
+11422,EXC H-F-NK-SP B9+MARG 1.1-2,Under Excision-Benign Lesions Procedures on the Skin 1.1-2 CM
+11602,EXC TR-EXT MAL+MARG 1.1-2 CM,Excision-Malignant Lesions
+11721,DEBRIDE NAIL 6 OR MORE,Removal of 6 or more nails
+11730,REMOVAL OF NAIL PLATE,Separation and removal of the entire nail plate or a portion of nail plate
+11900,INJECT SKIN LESIONS </W 7,Injections to remove up to 7 lesions on the skin
+12001,RPR S/N/AX/GEN/TRNK 2.5CM/<,"Simple repair of superficial wounds of scalp, neck, axillae, external genitalia, trunk and/or extremities"
+12011,RPR F/E/E/N/L/M 2.5 CM/<,"Simple repair of superficial wounds of face, ears, eyelids, nose, lips and/or mucous membranes"
+17000,DESTRUCT PREMALG LESION,Destruction of pre-cancerous lesion
+17003,DESTRUCT PREMALG LES 2-14,Destruction of 2-14 pre-cancerous lesions
+17110,DESTRUCT B9 LESION 1-14,Destruction of 1-14 common or plantar warts
+17111,DESTRUCT LESION 15 OR MORE,Destruction of >15 common or plantar warts
+17250,CHEM CAUT OF GRANLTJ TISSUE,Chemical destruction of pre-cancerous lesions of the skin
+17311,MOHS 1 STAGE H/N/HF/G,"Micrographic technique, including removal of all gross tumor, surgical excision of tissue specimens, mapping, color coding of specimens, microscopic examination of specimens"
+19120,REMOVAL OF BREAST LESION,REMOVAL OF BREAST LESION
+20550,INJ TENDON SHEATH/LIGAMENT,Injection of medication into a tendon or ligament
+20551,INJ TENDON ORIGIN/INSERTION,Injection of medication into the tendon/ligament origin
+20553,INJECT TRIGGER POINTS 3/>,Injection of medication into an area that triggers pain
+20600,DRAIN/INJ JOINT/BURSA W/O US,Draining or injecting medication into a small joint/bursa without ultrasound
+20605,DRAIN/INJ JOINT/BURSA W/O US,Draining or injecting medication into a large joint/bursa without ultrasound
+20610,DRAIN/INJ JOINT/BURSA W/O US,Draining or injecting medication into a major joint/bursa without ultrasound
+20612,ASPIRATE/INJ GANGLION CYST,Removal of fluid or injection of medication into a ganglion cyst
+27440,Revision of knee joint,Repair of knee joint
+27441,Revision of knee joint,Repair of knee joint
+27442,Revision of knee joint,Repair of knee joint
+27443,Revision of knee joint,Repair of knee joint
+27445,Revision of knee joint,Repair of knee joint with hinged prosthesis
+27446,Revision of knee joint,Repair of knee joint
+28296,CORRECTION HALLUX VALGUS,"Under Repair, Revision, and/or Reconstruction Procedures on the Foot and Toes"
+29826,Subacromial Decompression,Shaving of shoulder bone using an endoscope
+29848,WRIST ENDOSCOPY/SURGERY,Carpal tunnel release
+29880,KNEE ARTHROSCOPY/SURGERY,Surgery to remove of all or part of a torn meniscus in both medial and lateral compartments
+29881,KNEE ARTHROSCOPY/SURGERY,Surgery to remove of all or part of a torn meniscus in one compartment
+29888,KNEE ARTHROSCOPY/SURGERY,ACL reconstruction
+30520,REPAIR OF NASAL SEPTUM,Repair procedures of the nose
+31231,NASAL ENDOSCOPY DX,"Nasal endoscopy, diagnostic, unilateral or bilateral"
+31237,NASAL/SINUS ENDOSCOPY SURG,"Surgical nasal/ sinus endoscopy with biopsy, polypectomy or debridement"
+31575,DIAGNOSTIC LARYNGOSCOPY,"Flexible, fiberoptic diagnostic laryngoscopy"
+36415,ROUTINE VENIPUNCTURE,Collection of venous blood by venipuncture
+36471,NJX SCLRSNT MLT INCMPTNT VN,Injections to remove spider veins on the limbs or trunk
+36475,ENDOVENOUS RF 1ST VEIN,Ablation of incompetent vein
+36478,ENDOVENOUS LASER 1ST VEIN,Laser removal of incompetent vein
+42820,REMOVE TONSILS AND ADENOIDS,Removal of tonsils and adenoid glands patient younger than age 12
+42826,REMOVAL OF TONSILS,Primary or secondary removal of tonsils
+42830,REMOVAL OF ADENOIDS,Primary removal of the adenoids
+43235,EGD DIAGNOSTIC BRUSH WASH,"Diagnostic examination of esophagus, stomach, and/or upper small bowel using an endoscope"
+43239,EGD BIOPSY SINGLE/MULTIPLE,"Biopsy of the esophagus, stomach, and/or upper small bowel using an endoscope"
+43846,"Gastric restrictive procedure, with gastric bypass for morbid obesity; with small intestine reconstruction to limit absorption",Surgical procedure used for weight loss resulting in a partial removal of stomach
+44388,Colonoscopy thru stoma spx,Diagnostic examination of large bowel using an endoscope which is inserted through abdominal opening
+44389,Colonoscopy with biopsy,Biopsies of large bowel using an endoscope which is inserted through abdominal opening
+44394,Colonoscopy w/snare,Removal of large bowel polyps or growths using an endoscope
+45378,DIAGNOSTIC COLONOSCOPY,Diagnostic examination of large bowel using an endoscope
+45379,Colonoscopy w/fb removal,Removal of foreign bodies in large bowel using an endoscope
+45380,COLONOSCOPY AND BIOPSY,Biopsy of large bowel using an endoscope
+45381,Colonoscopy submucous njx,Injections of large bowel using an endoscope
+45382,Colonoscopy w/control bleed,Control of bleeding in large bowel using an endoscope
+45384,Colonoscopy w/lesion removal,Removal of polyps or growths in large bowel using an endoscope
+45385,COLONOSCOPY W/LESION REMOVAL,Removal of polyps or growths of large bowel using an endoscope
+45386,Colonoscopy w/balloon dilat,Balloon dilation of large bowel using an endoscope
+45388,Colonoscopy w/ablation,Destruction of large bowel growths using an endoscope
+45390,Colonoscopy w/resection,Removal of large bowel tissue using an endoscope
+45391,Colonoscopy w/endoscope us,Ultrasound examination of lower large bowel using an endoscope
+45392,Colonoscopy w/endoscopic fnb,Ultrasound guided needle aspiration or biopsy of lower large bowel using an endoscope
+45398,Colonoscopy w/band ligation,Tying of large bowel using an endoscope
+47562,LAPAROSCOPIC CHOLECYSTECTOMY,Removal of gallbladder using an endoscope
+47563,LAPARO CHOLECYSTECTOMY/GRAPH,Gallbladder removal with use of an x-ray exam of the bile ducts
+49505,PRP I/HERN INIT REDUC >5 YR,Repair of groin hernia patient age 5 years or older
+49585,RPR UMBIL HERN REDUC > 5 YR,Repair of umbilical hernia in patients over 5 years old
+49650,LAP ING HERNIA REPAIR INIT,Inguinal hernia repair done by laparoscope
+50590,FRAGMENTING OF KIDNEY STONE,Surgical procedures on the kidney to break up and remove kidney stones
+51741,ELECTRO-UROFLOWMETRY FIRST,A diagnostic test used to measure the flow of urine
+51798,US URINE CAPACITY MEASURE,Ultrasound of bladder to measure urine capacity
+52000,CYSTOSCOPY,Procedure on the bladder
+52310,CYSTOSCOPY AND TREATMENT,Removing an indwelling ureteral stent by cystoscopy
+52332,CYSTOSCOPY AND TREATMENT,Ureteral stents inserted internally between the bladder and the kidney and will remain within the patient for a defined period of time
+55250,EXCISION PROCEDURES ON THE VAS DEFERENS,Removal of sperm duct(s)
+55700,Prostate biopsy,Biopsy of prostate gland
+55866,Surgical Procedures on the Prostate,Surgical removal of prostate and surrounding lymph nodes using an endoscope
+57022,Incision and drainage of vaginal blood accumulation following delivery,Incision and drainage of vaginal blood accumulation following delivery
+57288,REPAIR BLADDER DEFECT,Replacement of sling to support the bladder
+57454,BX/CURETT OF CERVIX W/SCOPE,Biopsy of cervix or uterus
+58100,EXCISION PROCEDURES ON THE CORPUS UTERI,Biopsy of the lining of the uterus
+58558,HYSTEROSCOPY BIOPSY,Surgical hysteroscopy with biopsy
+58563,HYSTEROSCOPY ABLATION,Surgical procedure used to treat premenopausal abnormal uterine bleeding
+58565,HYSTEROSCOPY STERILIZATION,Laparoscopic/Hysteroscopic Procedures on the uterus
+58571,TLH W/T/O 250 G OR LESS,Laparoscopic hysterectomy
+58661,LAPAROSCOPY REMOVE ADNEXA,"Removal of either benign or malignant tissue from the uterus, ovaries, fallopian tubes, or any of the surrounding tissues using a laparoscope"
+58662,LAPAROSCOPY EXCISE LESIONS,"Removal of lesions of the ovary, pelvic viscera, or peritoneal surface"
+58671,LAPAROSCOPY TUBAL BLOCK,Laparoscopic tubal sterilization is surgery to block the fallopian tubes to prevent pregnancy
+59000,AMNIOCENTESIS DIAGNOSTIC,Removal of amniotic fluid from the uterus for diagnostic purposes
+59025,FETAL NON-STRESS TEST,A common prenatal test used to check on a baby's health.
+59400,OBSTETRICAL CARE,Obstetrical pre- and postpartum care and vaginal delivery
+59409,Vaginal delivery,Vaginal delivery
+59410,Vaginal delivery with post-delivery care,Vaginal delivery with post-delivery care
+59414,Vaginal delivery of placenta,Vaginal delivery of placenta
+59425,Pre-delivery care 4-6 visits,Pre-delivery care 4-6 visits
+59426,Pre-delivery care 7 or more visits,Pre-delivery care 7 or more visits
+59510,CESAREAN DELIVERY,Cesarean delivery with pre- and post-delivery care
+59514,Cesarean delivery,Cesarean delivery
+59515,Cesarean delivery with post-delivery care,Cesarean delivery with post-delivery care
+59610,VBAC DELIVERY,Vaginal delivery after prior cesarean delivery
+59612,Vaginal delivery after prior cesarean delivery,Vaginal delivery after prior cesarean delivery
+59614,Vaginal delivery after prior cesarean delivery with post-delivery care,Vaginal delivery after prior cesarean delivery with post-delivery care
+62322,SPINAL INJECTION FOR PAIN MANAGEMENT,Injection of substance into spinal canal of lower back or sacrum using imaging guidance
+62323,Injection of substance into spinal canal of lower back or sacrum using imaging guidance,Injection of substance into spinal canal of lower back or sacrum using imaging guidance
+63030,LOW BACK DISK SURGERY,Surgical procedure to decompress a herniated vertebra
+64483,Transforaminal Epidural Injection,Injections of anesthetic and/or steroid drug into lower or sacral spine nerve root using imaging guidance
+64493,INJ PARAVERT F JNT L/S 1 LEV,Injection into lower back of nerve block using imaging guidance
+64721,CARPAL TUNNEL SURGERY,Release of the transverse carpal ligament
+66821,YAG capusulotomy surgery,Removal of recurring cataract in lens capsule using laser
+66984,CATARACT SURG W/IOL 1 STAGE,Removal of cataract with insertion of lens
+67028,INJECTION EYE DRUG,Injection of a pharmaceutical agent into the eye
+69210,REMOVE IMPACTED EAR WAX,Removal of ear wax from one or both ears
+69436,CREATE EARDRUM OPENING,Insertion of tubes into one or both ears
+70450,CT HEAD/BRAIN W/O DYE,CT scan head or brain without dye
+70486,CT MAXILLOFACIAL W/O DYE,CT Scan of the face and jaw without dye
+70491,CT SOFT TISSUE NECK W/DYE,CT scan of neck with dye
+70551,MRI BRAIN STEM W/O DYE,MRI of brain stem without dye
+70553,MRI BRAIN STEM W/O & W/DYE,MRI scan of brain before and after contrast
+71045,CHEST X-RAY,Single view
+71046,CHEST X-RAY,"2 views, front and back"
+71047,CHEST X-RAY,3 views
+71048,CHEST X-RAY,4 or more views
+71101,X-RAY EXAM UNILAT RIBS/CHEST,Radiologic examination of one side of the chest/ribs
+71250,CT THORAX W/O DYE,CT scan of the thorax without dye
+71260,CT THORAX W/DYE,CT scan of the thorax with dye
+71275,CT ANGIOGRAPHY CHEST,Diagnostic Radiology (Diagnostic Imaging) Procedures of the Chest
+72040,X-RAY EXAM NECK SPINE 2-3 VW,"Radiologic examination of the neck/spine, 2-3 views"
+72050,X-RAY EXAM NECK SPINE 4/5VWS,"Radiologic examination of the neck/spine, 4-5 views"
+72070,X-RAY EXAM THORAC SPINE 2VWS,"Radiologic examination of the middle spine, 2 views"
+72072,X-RAY EXAM THORAC SPINE 3VWS,"Radiologic examination of the middle spine, 3 views"
+72100,X-RAY EXAM L-S SPINE 2/3 VWS,X-ray of the lower spine 2-3 views
+72110,X-RAY EXAM L-2 SPINE 4/>VWS,"X-ray of lower and sacral spine, minimum of 4 views"
+72131,CT LUMBAR SPINE W/O DYE,CT scan of lower spine without dye
+72141,MRI NECK SPINE W/O DYE,MRI of the neck or spine without dye
+72146,MRI CHEST SPINE W/O DYE,MRI of chest and spine without dye
+72148,MRI LUMBAR SPINE W/O DYE,MRI scan of lower spinal canal
+72156,MRI NECK SPINE W/O & W/DYE,MRI of neck/spine with and without dye
+72157,MRI CHEST SPINE W/O & W/DYE,MRI of chest and spine with and without dye
+72158,MRI LUMBAR SPINE W/O & W/DYE,MRI of lower back with and without dye
+72170,X-RAY EXAM OF PELVIS,Radiologic examination of the pelvis
+72192,CT PELVIS W/O DYE,CT of pelvis without dye
+72193,CT PELVIS W/DYE,"CT scan, pelvis, with contrast"
+72195,MRI PELVIS W/O DYE,MRI of pelvis without dye
+72197,MRI PELVIS W/O & W/DYE,MRI of pelvis before and after dye
+73000,X-RAY EXAM OF COLLAR BONE,Radiologic examination of the collar bone
+73030,X-RAY EXAM OF SHOULDER,Radiologic examination of the shoulder
+73070,X-RAY EXAM OF ELBOW,"Radiologic examination, elbow; 2 views"
+73080,X-RAY EXAM OF ELBOW,"Radiologic examination, elbow; 3 or more views"
+73090,X-RAY EXAM OF FOREARM,Radiologic examination of the forearm
+73100,X-RAY EXAM OF WRIST,3 or more views
+73110,X-RAY EXAM OF WRIST,Up to 3 views
+73120,X-RAY EXAM OF HAND,X-ray of the hand with 2 views
+73130,X-RAY EXAM OF HAND,X-ray of the hand with 3 or more views
+73140,X-RAY EXAM OF FINGER(S),Radiologic examination of the finger(s)
+73221,MRI JOINT UPR EXTREM W/O DYE,MRI of upper extremity without dye
+73560,X-RAY EXAM OF KNEE 1 OR 2,Radiologic examination of the knee with 1 or 2 views
+73562,X-RAY EXAM OF KNEE 3,Radiologic examination of the knee with 3 views
+73564,X-RAY EXAM KNEE 4 OR MORE,Radiologic examination of the knee with 4 or more views
+73565,X-RAY EXAM OF KNEES,Radiologic examination of both knees
+73590,X-RAY EXAM OF LOWER LEG,Radiologic examination of the lower leg
+73600,X-RAY EXAM OF ANKLE,Radiologic examination of the ankle with 2 views
+73610,X-RAY EXAM OF ANKLE,Radiologic examination of the ankle with 3 views
+73620,X-RAY EXAM OF FOOT,"Radiologic examination, foot; 2 views"
+73630,X-RAY EXAM OF FOOT,Radiologic examination of the foot with 3 or more views
+73650,X-RAY EXAM OF HEEL,Radiologic examination of the heel
+73660,X-RAY EXAM OF TOE(S),Radiologic examination of the toe(s)
+73700,CT LOWER EXTREMITY W/O DYE,CT scan of leg without dye
+73718,MRI LOWER EXTREMITY W/O DYE,MRI of leg without dye
+73721,MRI JNT OF LWR EXTRE W/O DYE,MRI of lower extremity joint (knee/ankle) without dye
+73722,MRI JOINT OF LWR EXTR W/DYE,MRI of lower extremity joint (knee/ankle) with dye
+73723,MRI JOINT LWR EXTR W/O&W/DYE,MRI of lower extremity joint (knee/ankle) with and without dye
+74022,X-RAY EXAM SERIES ABDOMEN,Serial radiologic examination of the abdomen
+74150,CT ABDOMEN W/O DYE,CT of abdomen without dye
+74160,CT ABDOMEN W/DYE,CT of abdomen with dye
+74170,CT ABDOMEN W/O & W/DYE,CT of abdomen with and without dye
+74176,CT ABD & PELVIS W/O CONTRAST,CT of abdomen and pelvis without dye
+74177,CT ABD & PELV W/CONTRAST,CT scan of abdomen and pelvis with contrast
+74178,CT ABD & PELV 1/> REGNS,"Computed tomography, abdomen and pelvis; without contrast material in one or both body regions, followed by contrast material(s) and further sections in one or both body regions"
+74181,MRI ABDOMEN W/O DYE,MRI of abdomen without dye
+74183,MRI ABDOMEN W/O & W/DYE,MRI of abdomen without and with dye
+76000,CHEST X-RAY,"Flouroscopy, or x-ray ""movie"" that takes less than an hour"
+76512,OPHTH US B W/NON-QUANT A,Ultrasound of the eye
+76514,ECHO EXAM OF EYE THICKNESS,A diagnostic procedure that allows a provider to see the organs and other structures in the abdomen
+76536,US EXAM OF HEAD AND NECK,Ultrasound of head and neck
+76642,ULTRASOUND BREAST LIMITED,Limited ultrasound of the breast
+76700,US EXAM ABDOM COMPLETE,Ultrasound of abdomen with all areas scanned
+76705,ECHO EXAM OF ABDOMEN,A diagnostic procedure that allows a provider to see the organs and other structures in the abdomen
+76770,US EXAM ABDO BACK WALL COMP,Ultrasound of back wall of the abdomen with all areas viewed
+76775,US EXAM ABDO BACK WALL LIM,Ultrasound of back wall of the abdomen with limited areas viewed
+76801,OB US < 14 WKS SINGLE FETUS,Abdominal ultrasound of pregnant uterus (less than 14 weeks) single or first fetus
+76805,OB US >/= 14 WKS SNGL FETUS,Abdominal ultrasound of pregnant uterus (greater or equal to 14 weeks 0 days) single or first fetus
+76811,OB US DETAILED SNGL FETUS,Ultrasound of single fetus
+76813,OB US NUCHAL MEAS 1 GEST,Evaluation through measurement of fetal nuchal translucency
+76815,OB US LIMITED FETUS(S),Ultrasound of fetus with limited views
+76817,TRANSVAGINAL US OBSTETRIC,Transvaginal ultrasound of uterus
+76818,FETAL BIOPHYS PROFILE W/NST,Fetal biophysical profile with non-stress test
+76819,FETAL BIOPHYS PROFIL W/O NST,Fetal biophysical profile without non-stress test
+76830,TRANSVAGINAL US NON-OB,Ultrasound of the pelvis through vagina
+76831,ECHO EXAM UTERUS,A diagnostic procedure that allows a provider to see the uterus
+76856,US EXAM PELVIC COMPLETE,Complete ultrasound of the pelvis
+76857,US EXAM PELVIC LIMITED,Limited ultrasound of the pelvis
+76870,US EXAM SCROTUM,Ultrasound of the scrotum
+76872,US TRANSRECTAL,Transrectal ultrasound
+76882,US LMTD JT/NONVASC XTR STRUX,"Diagnostic ultrasound of an extremity excluding the bone, joints or vessels"
+77047,MRI BOTH BREASTS,"Magnetic resonance imaging, breasts, without contrast material; bilateral"
+77065,DX MAMMO INCL CAD UNI,Mammography of one breast
+77066,DX MAMMO INCL CAD BI,Mammography of both breasts
+77067,SCR MAMMO BI INCL CAD,Mammography of both breasts-2 or more views
+77080,BONE DENSITY STUDY OF SPINE OR PELVIS,Scan to measure bone mineral density (BMD) at the spine and hip
+77385,Ntsty modul rad tx dlvr smpl,Radiation therapy delivery
+77386,Ntsty modul rad tx dlvr cplx,Radiation therapy delivery
+77387,Guidance for radia tx dlvr,Guidance for localization of target delivery of radiation treatment delivery
+77412,Radiation treatment delivery,Radiation treatment delivery
+78014,THYROID IMAGING W/BLOOD FLOW,Scan using a radioactive medication (radiopharmaceutical) to take pictures or images of the thyroid gland.
+78306,BONE IMAGING WHOLE BODY,"A procedure most commonly ordered to detect areas of abnormal bone growth due to fractures, tumors, infection, or other bone issues"
+78452,HT MUSCLE IMAGE SPECT MULT,Image of the heart to assess perfusion
+78815,PET IMAGE W/CT SKULL-THIGH,"Tumor imaging, positron emission tomography (PET) with concurrently acquired computed tomography (CT) for attenuation correction and anatomical localization"
+80048,METABOLIC PANEL TOTAL CA,Basic metabolic panel
+80050,GENERAL HEALTH PANEL,General health panel
+80051,"Blood test panel for electrolytes (sodium potassium, chloride, carbon dioxide)","Blood test panel for electrolytes (sodium potassium, chloride, carbon dioxide)"
+80053,COMPREHEN METABOLIC PANEL,"Blood test, comprehensive group of blood chemicals"
+80055,OBSTETRIC PANEL,Obstetric blood test panel
+80061,LIPID PANEL,"Blood test, lipids (cholesterol and triglycerides)"
+80069,RENAL FUNCTION PANEL,Kidney function panel test
+80074,ACUTE HEPATITIS PANEL,Acute hepatitis panel
+80076,HEPATIC FUNCTION PANEL,Liver function blood test panel
+80081,"Blood test panel for obstetrics (cbc, differential wbc count, hepatitis b, hiv, rubella, syphilis, antibody screening, rbc, blood typing)","Blood test panel for obstetrics (cbc, differential wbc count, hepatitis b, hiv, rubella, syphilis, antibody screening, rbc, blood typing)"
+80197,ASSAY OF TACROLIMUS,Test is used to measure the amount of the drug in the blood to determine whether the concentration has reached a therapeutic level and is below the toxic level
+80307,Drug test prsmv chem anlyzr,Testing for presence of drug
+81000,URINALYSIS NONAUTO W/SCOPE,Manual urinalysis test with examination using microscope
+81001,URINALYSIS; MANUAL OR AUTO WITH OR WITHOUT MICROSCOPY,Manual urinalysis test with examination with or without using microscope
+81002,URINALYSIS NONAUTO W/O SCOPE,Manual urinalysis test with examination without using microscope
+81003,URINALYSIS; MANUAL OR AUTO WITH OR WITHOUT MICROSCOPY,Automated urinalysis test
+81025,URINE PREGNANCY TEST,Urine pregnancy test
+82043,UR ALBUMIN QUANTITATIVE,Urine test to measure albumin
+82044,UR ALBUMIN SEMIQUANTITATIVE,Urine test to measure albumin-semiquantitative
+82248,BILIRUBIN DIRECT,Measurement of direct bilirubin
+82306,VITAMIN D 25 HYDROXY,Blood test to monitor vitamin D levels
+82553,CREATINE MB FRACTION,Blood test to detect heart enzymes
+82570,ASSAY OF URINE CREATININE,Test to measure creatinine in the urine
+82607,VITAMIN B-12,Blood test to measure B-12
+82627,DEHYDROEPIANDROSTERONE,Blood test to measure an enzyme in the blood
+82670,ASSAY OF ESTRADIOL,Blood test to measure a type of estrogen in the blood
+82728,ASSAY OF FERRITIN,Test to determine level of iron in the blood
+82784,ASSAY IGA/IGD/IGG/IGM EACH,Test to determine levels of immunoglobulins in the blood
+82803,BLOOD GASES ANY COMBINATION,Test to measure arterial blood gases
+82947,ASSAY GLUCOSE BLOOD QUANT,Quantitative measure of glucose build up in the blood over time
+82950,GLUCOSE TEST,Test of glucose level in the blood
+82951,GLUCOSE TOLERANCE TEST,Test to predict likelihood of gestational diabetes
+83001,ASSAY OF GONADOTROPIN (FSH),Test of hormone in the blood
+83002,ASSAY OF GONADOTROPIN (LH),Test of hormone in the blood
+83013,H PYLORI (C-13) BREATH,Test of breath for a stomach bacterium
+83036,GLYCOSYLATED HEMOGLOBIN TEST,Blood test to measure average blood glucose levels for past 2-3 months
+83516,IMMUNOASSAY NONANTIBODY,Chemical test of the blood to measure presence or concentration of a substance in the blood
+83540,ASSAY OF IRON,Blood test to measure the amount of iron that is in transit in the body
+83550,IRON BINDING TEST,Blood test that measures the amount of iron carried in the blood
+83655,ASSAY OF LEAD,Blood test to determine the concentration of lead in the blood
+83718,ASSAY OF LIPOPROTEIN,Blood test to measure the level of lipoproteins in the blood
+83880,ASSAY OF NATRIURETIC PEPTIDE,Blood test used to diagnose heart failure
+84134,ASSAY OF PREALBUMIN,Blood test to measure level of prealbumin
+84153,ASSAY OF PSA TOTAL,PSA (prostate specific antigen)
+84154,PSA (prostate specific antigen) measurement,PSA (prostate specific antigen) measurement
+84436,ASSAY OF TOTAL THYROXINE,Blood test to measure a type of thyroid hormone
+84439,ASSAY OF FREE THYROXINE,Blood test to evaluate thyroid function
+84443,ASSAY THYROID STIM HORMONE,"Blood test, thyroid stimulating hormone (TSH)"
+84460,ALANINE AMINO (ALT) (SGPT),Blood test to evaluate liver function
+84480,ASSAY TRIIODOTHYRONINE (T3),Blood test to evaluate thyroid function
+84484,ASSAY OF TROPONIN QUANT,Blood test to measure a certain protein in the blood to determine heart muscle damage
+84703,CHORIONIC GONADOTROPIN ASSAY,Blood test to assess for pregnancy
+85007,BL SMEAR W/DIFF WBC COUNT,Blood test to assess for infection
+85018,HEMOGLOBIN,Blood test to measure levels of hemoglobin
+85025,COMPLETE CBC W/AUTO DIFF WBC,"Complete blood cell count, with differential white blood cells, automated"
+85027,COMPLETE CBC AUTOMATED,"Complete blood count, automated"
+85610,PROTHROMBIN TIME,"Blood test, clotting time"
+85730,THROMBOPLASTIN TIME PARTIAL,Coagulation assessment blood test
+86039,ANTINUCLEAR ANTIBODIES (ANA),Blood test to determine autoimmune disorders
+86147,CARDIOLIPIN ANTIBODY EA IG,Blood test to determine cause of inappropriate blood clot formation
+86200,CCP ANTIBODY,Blood test to diagnose rheumatoid arthritis
+86300,IMMUNOASSAY TUMOR CA 15-3,Blood test to monitor breast cancer
+86304,IMMUNOASSAY TUMOR CA 125,Blood test to monitor for cancer
+86336,INHIBIN A,Blood test to monitor for cancer in the ovaries or testis
+86592,SYPHILIS TEST NON-TREP QUAL,Blood test to screen for syphilis
+86644,CMV ANTIBODY,Blood test to monitor for cytomegalovirus
+86665,EPSTEIN-BARR CAPSID VCA,Blood test to diagnose mononucleosis
+86677,HELICOBACTER PYLORI ANTIBODY,Blood test to if peptic ulcers are caused by a certain bacterium
+86703,HIV-1/HIV-2 1 RESULT ANTBDY,Blood test to diagnose HIV
+86704,HEP B CORE ANTIBODY TOTAL,Blood test indicating infection with Hepatitis B
+86708,HEPATITIS A ANTIBODY,Blood test indicating infection with Hepatitis A
+86762,RUBELLA ANTIBODY,Blood test to determine if antibodies exist for rubella
+86765,RUBEOLA ANTIBODY,Blood test to determine if antibodies exist for measles
+86780,TREPONEMA PALLIDUM,Blood test to determine existence of certain bacterium that causes syphilis
+86803,HEPATITIS C AB TEST,Blood test to determine infection with Hepatitis C
+86850,RBC ANTIBODY SCREEN,Blood test to screen for antibodies that could harm red blood cells
+87040,BLOOD CULTURE FOR BACTERIA,Blood test to screen for bacteria in the blood
+87046,STOOL CULTR AEROBIC BACT EA,Blood test to identify bacteria that may be contributing to symptoms in the gastrointestinal tract
+87070,CULTURE OTHR SPECIMN AEROBIC,Test of body fluid other than blood to assess for bacteria
+87077,CULTURE AEROBIC IDENTIFY,Test of a wound for type of bacterial infection
+87081,CULTURE SCREEN ONLY,Medical test to find an infection
+87086,URINE CULTURE/COLONY COUNT,Culture of the urine to determine number of bacteria
+87088,URINE BACTERIA CULTURE,Culture of the urine to determine bacterial infection
+87101,SKIN FUNGI CULTURE,A procedure used to determine if fungi are present in an area of the body
+87186,MICROBE SUSCEPTIBLE MIC,A test used to determine which medications work on bacteria for fungi
+87205,SMEAR GRAM STAIN,A lab test used to detect bacteria or fungi in a sample taken from the site of a suspected infection
+87210,SMEAR WET MOUNT SALINE/INK,A lab test to screen for evidence of vaginal infection
+87324,CLOSTRIDIUM AG IA,A test of the stool to diagnose Clostridium difficile (C. diff) infection
+87389,HIV-1 AG W/HIV-1 & HIV-2 AB,Test for HIV
+87491,CHYLMD TRACH DNA AMP PROBE,Test that detects Chlamydia
+87510,GARDNER VAG DNA DIR PROBE,Blood test for vaginitis
+87591,N.GONORRHOEAE DNA AMP PROB,Blood test for an STD
+87624,Hpv high-risk types,Detection test for human papillomavirus (hpv)
+87653,STREP B DNA AMP PROBE,Blood test for strep infection
+87661,TRICHOMONAS VAGINALIS AMPLIF,Blood test for an STD
+87801,DETECT AGNT MULT DNA AMPLI,Blood test to determine genetic material of certain infectious agents
+87804,INFLUENZA ASSAY W/OPTIC,Flu test
+87807,RSV ASSAY W/OPTIC,Test for RSV
+87880,STREP A ASSAY W/OPTIC,Test for strep A
+88112,CYTOPATH CELL ENHANCE TECH,Urine test
+88141,CYTOPATH C/V INTERPRET,Cervical cancer screening test with interpretation
+88142,CYTOPATH C/V THIN LAYER,PAP smear
+88150,CYTOPATH C/V MANUAL,Cervical cancer screening test done manually
+88175,CYTOPATH C/V AUTO FLUID REDO,PAP smear
+88305,TISSUE EXAM BY PATHOLOGIST,Test of tissues for diagnosis of abnormalities
+88312,SPECIAL STAINS GROUP 1,Blood test to assist with diagnosis
+88313,SPECIAL STAINS GROUP 2,Blood test to assist with diagnosis
+88342,IMMUNOHISTO ANTB 1ST STAIN,Pathology test
+90460,IM ADMIN 1ST/ONLY COMPONENT,Immunization administration in children <18
+90471,IMMUNIZATION ADMIN,Immunization administration by a medical assistant or nurse
+90474,IMMUNE ADMIN ORAL/NASAL ADDL,Immunization administered orally or nasally
+90632,HEPA VACCINE ADULT IM,Hepatitis A vaccination for adults
+90633,HEPA VACC PED/ADOL 2 DOSE IM,Hepatitis A vaccination for adolescents and children
+90649,4VHPV VACCINE 3 DOSE IM,3-dose HPV vaccination
+90656,IIV3 VACC NO PRSV 0.5 ML IM,Flu shot-high dose for 2019-2020 flu season given by injection
+90658,IIV3 VACCINE SPLT 0.5 ML IM,Preservative free flu vaccine
+90672,LAIV4 VACCINE INTRANASAL,Nasal flu vaccine
+90681,RV1 VACC 2 DOSE LIVE ORAL,Rotavirus vaccination
+90686,IIV4 VACC NO PRSV 0.5 ML IM,Flu shot-high dose for 2019-2020 flu season given by injection for people >65
+90707,MMR VACCINE SC,"Measles, mumps and rubella vaccine"
+90710,MMRV VACCINE SC,"measlesMeasles, mumps, rubella and varicella vaccine"
+90715,TDAP VACCINE 7 YRS/> IM,"Diphtheria, tetanus acellular, and pertussis vaccine for adults"
+90716,VAR VACCINE LIVE SUBQ,Varicella vaccine
+90732,PPSV23 VACC 2 YRS+ SUBQ/IM,pneumococcal Pneumococcal vaccine
+90734,MENACWYD/MENACWYCRM VACC IM,meningococcal Meningococcal conjugate vaccine
+90736,HZV VACCINE LIVE SUBQ,Shingles vaccine
+90746,HEPB VACCINE 3 DOSE ADULT IM,Hepatitis B vaccine
+90791,PSYCH DIAGNOSTIC EVALUATION,"A diagnostic tool employed by a psychiatrist to diagnose problems with memory, thought processes, and behaviors"
+90792,PSYCH DIAG EVAL W/MED SRVCS,A diagnostic tool employed by a psychiatrist to determine if medications are needed
+90832,PSYTX W PT 30 MINUTES,"Psychotherapy, 30 min"
+90833,PSYTX W PT W E/M 30 MIN,"Psychotherapy, 30 minutes with patient when performed with an evaluation and management service"
+90834,PSYTX W PT 45 MINUTES,"Psychotherapy, 45 min"
+90836,PSYTX W PT W E/M 45 MIN,"Psychotherapy, 45 minutes with patient when performed with an evaluation and management service"
+90837,PSYTX W PT 60 MINUTES,"Psychotherapy, 60 min"
+90838,"Psychotherapy, 60 minutes","Psychotherapy, 60 minutes"
+90839,"Psychotherapy for crisis, first 60 minutes","Psychotherapy for crisis, first 60 minutes"
+90840,Psychotherapy for crisis,Psychotherapy for crisis
+90846,"Family psychotherapy, 50 minutes","Family psychotherapy, not including patient, 50 min"
+90847,FAMILY PSYTX W/PT 50 MIN,"Family psychotherapy, including patient, 50 min"
+90853,GROUP PSYCHOTHERAPY,Group psychotherapy
+92002,EYE EXAM NEW PATIENT,Intermediate exam
+92004,EYE EXAM NEW PATIENT,Complete exam
+92012,EYE EXAM ESTABLISH PATIENT,Eye exam on an established patient
+92014,EYE EXAM&TX ESTAB PT 1/>VST,Eye exam and treatment for established patient
+92083,VISUAL FIELD EXAMINATION(S),An eye examination that can detect dysfunction in central and peripheral vision
+92133,CMPTR OPHTH IMG OPTIC NERVE,Optic nerve imaging
+92507,SPEECH/HEARING THERAPY,Therapy for speech or hearing
+92523,SPEECH SOUND LANG COMPREHEN,Evaluation of speech sound production with evaluation of language comprehension
+92552,PURE TONE AUDIOMETRY AIR,Type of hearing test
+93000,ELECTROCARDIOGRAM COMPLETE,Routine EKG using at least 12 leads including interpretation and report
+93015,CARDIOVASCULAR STRESS TEST,Test to determine heart abnormalities
+93303,ECHO TRANSTHORACIC,Test to screen the heart for abnormalities
+93306,Tte w/doppler complete,"Ultrasound examination of heart including color-depicted blood flow rate, direction, and valve function"
+93307,TTE W/O DOPPLER COMPLETE,Echo without doppler study
+93320,DOPPLER ECHO EXAM HEART,Echo with doppler
+93350,STRESS TTE ONLY,Stress test with echocardiogram
+93452,Cardiac Catheterization,Insertion of catheter into left heart for diagnosis
+93798,CARDIAC REHAB/MONITOR,Use of EKG to monitor cardiac rehabilitation
+93880,EXTRACRANIAL BILAT STUDY,Study of vessels on both sides of the head and neck
+93922,UPR/L XTREMITY ART 2 LEVELS,Limited bilateral noninvasive physiologic studies of upper or lower extremity arteries
+93970,EXTREMITY STUDY,Complete bilateral study of the extremities
+93971,EXTREMITY STUDY,One sided or limited bilateral study
+94010,BREATHING CAPACITY TEST,Test to determine how well oxygen moves from the lungs to the blood stream
+94060,EVALUATION OF WHEEZING,Test to determine if wheezing is present
+94375,RESPIRATORY FLOW VOLUME LOOP,Graphical representation of inspiration and expiration
+94726,PULM FUNCT TST PLETHYSMOGRAP,Measures how much air is in the lungs after taking a deep breath
+94727,PULM FUNCTION TEST BY GAS,Measure of lung function and gas exchange
+94729,CO/MEMBANE DIFFUSE CAPACITY,Test to measure how well gases diffuse across lung surfaces
+95004,PERCUT ALLERGY SKIN TESTS,Allergy test
+95115,IMMUNOTHERAPY ONE INJECTION,Allergy shot-1 shot
+95117,IMMUNOTHERAPY INJECTIONS,Multiple allergy shots
+95810,POLYSOM 6/> YRS 4/> PARAM,Sleep monitoring of patient (6 years or older) in sleep lab
+95811,POLYSOM 6/>YRS CPAP 4/> PARM,Sleep monitoring of patient (6 years or older) in sleep lab using CPAP
+95860,MUSCLE TEST ONE LIMB,Test to measure electrical activity of muscles or nerves in 1 limb
+95861,MUSCLE TEST 2 LIMBS,Test to measure electrical activity of muscles or nerves in 2 limb
+95886,MUSC TEST DONE W/N TEST COMP,Test to assess for nerve damage
+96110,DEVELOPMENTAL SCREEN W/SCORE,Childhood test to screen for developmental disabilities
+96365,THER/PROPH/DIAG IV INF INIT,"Intravenous infusion, for therapy, prophylaxis, or diagnosis-initial infusion"
+96366,THER/PROPH/DIAG IV INF ADDON,"Intravenous infusion, for therapy, prophylaxis, or diagnosis-additional infusions"
+96374,THER/PROPH/DIAG INJ IV PUSH,"Intravenous infusion, for therapy, prophylaxis, or diagnosis-IV push"
+96375,TX/PRO/DX INJ NEW DRUG ADDON,"Intravenous infusion, for treatment, prophylaxis, or diagnosis-new drug add on"
+96376,TX/PRO/DX INJ SAME DRUG ADON,"Intravenous infusion, for treatment, prophylaxis, or diagnosis-same drug add on"
+96415,CHEMO IV INFUSION ADDL HR,Chemotherapy infusion-each additional hour
+96417,CHEMO IV INFUS EACH ADDL SEQ,Chemotherapy infusion-additional IV pushes of the same medication
+97010,HOT OR COLD PACKS THERAPY,Use of external hot or cold packs
+97012,MECHANICAL TRACTION THERAPY,Form of decompression therapy of the spine
+97014,ELECTRIC STIMULATION THERAPY,One time use unattended
+97016,VASOPNEUMATIC DEVICE THERAPY,"Machines designed to pump cold water into an inflatable wrap or brace, compressing the enveloped area of the body"
+97026,INFRARED THERAPY,Light-based method to treat pain and inflammation
+97032,ELECTRICAL STIMULATION,Repeated application to one or more parts of the body
+97033,ELECTRIC CURRENT THERAPY,Psychiatric treatment in which seizures are electrically induced in patients to provide relief from mental disorders
+97035,ULTRASOUND THERAPY,"Use of sound waves to treat medical problems, especially musculoskeletal problems like inflammation from injuries"
+97110,THERAPEUTIC EXERCISES,"Therapeutic exercise to develop strength, endurance, range of motion, and flexibility, each 15 minutes"
+97112,NEUROMUSCULAR REEDUCATION,A technique used by physical therapists to restore normal body movement patterns
+97113,AQUATIC THERAPY/EXERCISES,Use of water for therapy/exercises
+97116,GAIT TRAINING THERAPY,A type of physical therapy
+97124,MASSAGE THERAPY,Use of massage
+97140,MANUAL THERAPY 1/> REGIONS,Manipulation of 1 or more regions of the body
+97530,THERAPEUTIC ACTIVITIES,"Incorporates the use of multiple parameters, such as balance, strength, and range of motion, for a functional activity"
+97535,SELF CARE MNGMENT TRAINING,Occupational therapy
+97597,RMVL DEVITAL TIS 20 CM/<,"Debridement (for example, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps)"
+97811,ACUPUNCT W/O STIMUL ADDL 15M,Acupuncture without stimulation
+97813,ACUPUNCT W/STIMUL 15 MIN,Acupuncture with stimulation
+98940,CHIROPRACT MANJ 1-2 REGIONS,Chiropractic manipulation in 1-2 regions
+98941,CHIROPRACT MANJ 3-4 REGIONS,Chiropractic manipulation in 3-4 regions
+98943,CHIROPRACT MANJ XTRSPINL 1/>,Chiropractic manipulation not of the spine
+98966,Hc pro phone call 5-10 min,"Telephone assessment and management service, 5-10 minutes of medical discussion"
+98967,Hc pro phone call 11-20 min,"Telephone assessment and management service, 11-20 minutes of medical discussion"
+98968,Hc pro phone call 21-30 min,"Telephone assessment and management service, 21-30 minutes of medical discussion"
+98970,Qualified non physician health care professional online digital assessment and management est. patient 5-10 minutes,"Qualified non physician health care professional online digital assessment and management, for an established patient, for up to 7 days, cumulative time during the 7 days; 5-10 minutes"
+98971,Qualified non physician health care professional online digital assessment and management est. patient 11-20 minutes,"Qualified non physician health care professional online digital assessment and management, for an established patient, for up to 7 days, cumulative time during the 7 days; 11-20 minutes"
+98972,Qualified non physician health care professional online digital assessment and management for est. patients 21+ minutes,"Qualified non physician health care professional online digital assessment and management, for an established patient, for up to 7 days, cumulative time during the 7 days; 21 or more minutes"
+99051,MED SERV EVE/WKEND/HOLIDAY,Medical service during off-hours
+99173,VISUAL ACUITY SCREEN,Eye test
+99202,OFFICE/OUTPATIENT VISIT NEW,"New patient office or other outpatient visit, typically 20 minutes"
+99203,OFFICE/OUTPATIENT VISIT NEW,"New patient office or other outpatient visit, typically 30 min"
+99204,OFFICE/OUTPATIENT VISIT NEW,"New patient office of other outpatient visit, typically 45 min"
+99205,OFFICE/OUTPATIENT VISIT NEW,"New patient office of other outpatient visit, typically 60 min"
+99211,OFFICE/OUTPATIENT VISIT EST,Outpatient visit of established patient not requiring a physician
+99212,OFFICE/OUTPATIENT VISIT EST,Outpatient visit of established patient requiring a physician
+99213,OFFICE/OUTPATIENT VISIT EST,"Established patient office or other outpatient visit, typically 15 minutes"
+99214,OFFICE/OUTPATIENT VISIT EST,"Established patient office or other outpatient visit, typically 25 minutes"
+99215,OFFICE/OUTPATIENT VISIT EST,"Established patient office or other outpatient, visit typically 40 minutes"
+99243,OFFICE CONSULTATION,"Patient office consultation, typically 40 min"
+99244,OFFICE CONSULTATION,"Patient office consultation, typically 60 min"
+99283,Emergency dept visit,"Emergency department visit, moderately severe problem"
+99284,Emergency dept visit,"Emergency department visit, problem of high severity"
+99285,Emergency dept visit,"Emergency department visit, problem with significant threat to life or function"
+99381,INIT PM E/M NEW PAT INFANT,Initial visit for an infant
+99382,INIT PM E/M NEW PAT 1-4 YRS,Initial visit for new patients 1-4 years old
+99383,PREV VISIT NEW AGE 5-11,New preventative visit in new patients 5-11 years old
+99384,PREV VISIT NEW AGE 12-17,New preventative visit in new patients 12-17 years old
+99385,PREV VISIT NEW AGE 18-39,Initial new patient preventive medicine evaluation (18–39 years)
+99386,PREV VISIT NEW AGE 40-64,Initial new patient preventive medicine evaluation (40–64 years)
+99387,INIT PM E/M NEW PAT 65+ YRS,Initial visit for new patients 65 and older years old
+99391,PER PM REEVAL EST PAT INFANT,Periodic primary re-evaluation for an established infant patient
+99392,PREV VISIT EST AGE 1-4,Initial visit for new patients 1-4 years old
+99393,PREV VISIT EST AGE 5-11,New preventative visit in new patients 5-11 years old
+99394,PREV VISIT EST AGE 12-17,New preventative visit in new patients 12-17 years old
+99395,PREV VISIT EST AGE 18-39,Established patient periodic preventive medicine examination age 18-39 years
+99396,PREV VISIT EST AGE 40-64,Established patient periodic preventive medicine examination age 40-64 years
+99397,PER PM REEVAL EST PAT 65+ YR,Periodic primary re-evaluation for an established patient 65 and older
+99421,ONLINE DIGITAL EVALUATION AND MANAGEMENT SERVICE; 5-10 MINUTES,"Online digital evaluation and management service, for an established patient, for up to 7 days, cumulative time during the 7 days; 5-10 minutes"
+99422,Online digital evaluation and management service; 11-20 minutes,"Online digital evaluation and management service, for an established patient, for up to 7 days, cumulative time during the 7 days; 11-20 minutes"
+99441,Phone e/m phys/qhp 5-10 min,"Physician telephone patient service, 5-10 minutes of medical discussion"
+99442,Phone e/m phys/qhp 11-20 min,"Physician telephone patient service, 11-20 minutes of medical discussion"
+99443,Phone e/m phys/qhp 21-30 min,"Physician telephone patient service, 21-30 minutes of medical discussion"
