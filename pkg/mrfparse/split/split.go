@@ -16,7 +16,7 @@ limitations under the License.
 package split
 
 import (
-	"mrfparse/pkg/mrfparse/utils"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 
 	"github.com/danielchalef/jsplit/pkg/jsplit"
 )

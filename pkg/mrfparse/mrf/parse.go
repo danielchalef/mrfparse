@@ -17,10 +17,10 @@ package mrf
 
 import (
 	"context"
-	"mrfparse/pkg/mrfparse/cloud"
-	"mrfparse/pkg/mrfparse/models"
-	"mrfparse/pkg/mrfparse/parquet"
-	"mrfparse/pkg/mrfparse/utils"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/cloud"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/models"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/parquet"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 	"path/filepath"
 	"strings"
 

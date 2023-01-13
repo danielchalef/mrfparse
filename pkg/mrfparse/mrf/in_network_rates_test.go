@@ -16,8 +16,8 @@ limitations under the License.
 package mrf
 
 import (
-	"mrfparse/pkg/mrfparse/models"
-	"mrfparse/pkg/mrfparse/utils"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/models"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 	"testing"
 
 	mapset "github.com/deckarep/golang-set/v2"

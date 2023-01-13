@@ -19,10 +19,10 @@ import (
 	"bufio"
 	"context"
 	"fmt"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/cloud"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/models"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 	"io"
-	"mrfparse/pkg/mrfparse/cloud"
-	"mrfparse/pkg/mrfparse/models"
-	"mrfparse/pkg/mrfparse/utils"
 	"strings"
 	"sync/atomic"
 

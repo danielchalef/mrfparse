@@ -18,9 +18,9 @@ package parquet
 import (
 	"context"
 	"fmt"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/cloud"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/models"
 	"io"
-	"mrfparse/pkg/mrfparse/cloud"
-	"mrfparse/pkg/mrfparse/models"
 
 	"github.com/segmentio/parquet-go"
 	"github.com/spf13/viper"

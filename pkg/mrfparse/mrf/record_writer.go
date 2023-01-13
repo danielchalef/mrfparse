@@ -15,7 +15,7 @@ limitations under the License.
 */
 package mrf
 
-import "mrfparse/pkg/mrfparse/models"
+import "github.com/danielchalef/mrfparse/pkg/mrfparse/models"
 
 var WriteRecords func(records []*models.Mrf) error
 
