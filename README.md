@@ -1,4 +1,4 @@
-[![Build and Test](https://github.com/lillianhealth/cms-mrfparse-go/actions/workflows/go.yml/badge.svg)](https://github.com/lillianhealth/cms-mrfparse-go/actions/workflows/go.yml)
+[![Build and Test](https://github.com/danielchalef/mrfparse/actions/workflows/main.yml/badge.svg)](https://github.com/danielchalef/mrfparse/actions/workflows/main.yml)
 
 # A Go parser for _Transparency in Coverage_ MRF files.
 `mrfparse` is a memory and CPU efficient parser for _Transparency in Coverage_ Machine Readable Format (MRF) files. The parser is designed to be easily containerized and scaled on modern cloud container platforms (and potentially cloud function infrastructure).
