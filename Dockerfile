@@ -11,7 +11,7 @@ RUN go mod download
 COPY cmd cmd
 COPY pkg pkg
 
-RUN GOOS=linux GOARCH=amd64 go build -ldflags="-w -s" -o /mrfparse 
+RUN go build -ldflags="-w -s" -o /mrfparse
 
 FROM debian:bullseye-slim as runtime
 

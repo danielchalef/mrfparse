@@ -20,7 +20,7 @@ all: build
 ## Build:
 build: ## Build your project
 	mkdir -p ./out/bin
-	GO111MODULE=on GOOS=linux GOARCH=amd64 $(GOCMD) build -o ./out/bin/$(BINARY_NAME) 
+	GO111MODULE=on $(GOCMD) build -o ./out/bin/$(BINARY_NAME)
 
 clean: ## Remove build related file
 	rm -f $(BINARY_NAME)
