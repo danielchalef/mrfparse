@@ -44,6 +44,11 @@ mrfparse pipeline -i gs://mrfdata/staging/2022-12-05_Innovation-Health-Plan-Inc.
 `mrfparse` operates in several stages each of which can be executed independently. See `mrfparse --help` for more options.
 
 ## Build and Installation
+Using `go install`:
+```bash
+go install github.com/danielchalef/mrfparse
+```
+
 Use the `Makefile` to build the binary or container. 
 
 Build the binary
