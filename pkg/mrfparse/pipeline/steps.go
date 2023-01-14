@@ -16,9 +16,9 @@ limitations under the License.
 package pipeline
 
 import (
-	"mrfparse/pkg/mrfparse/mrf"
-	"mrfparse/pkg/mrfparse/split"
-	"mrfparse/pkg/mrfparse/utils"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/mrf"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/split"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 	"os"
 
 	"github.com/spf13/viper"

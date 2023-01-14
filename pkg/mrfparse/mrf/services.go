@@ -18,9 +18,9 @@ package mrf
 import (
 	"context"
 	"encoding/csv"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/cloud"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 	"io"
-	"mrfparse/pkg/mrfparse/cloud"
-	"mrfparse/pkg/mrfparse/utils"
 
 	mapset "github.com/deckarep/golang-set/v2"
 	"github.com/spf13/viper"

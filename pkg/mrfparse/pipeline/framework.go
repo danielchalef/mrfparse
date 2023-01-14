@@ -16,7 +16,7 @@ limitations under the License.
 package pipeline
 
 import (
-	"mrfparse/pkg/mrfparse/utils"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 )
 
 // A very simple composable pipeline framework. Steps are added to a pipeline and then run in order.

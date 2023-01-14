@@ -17,8 +17,8 @@ package parquet
 
 import (
 	"context"
-	"mrfparse/pkg/mrfparse/models"
-	"mrfparse/pkg/mrfparse/utils"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/models"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 )
 
 var log = utils.GetLogger()

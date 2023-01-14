@@ -1,4 +1,4 @@
-module mrfparse
+module github.com/danielchalef/mrfparse
 
 go 1.19
 

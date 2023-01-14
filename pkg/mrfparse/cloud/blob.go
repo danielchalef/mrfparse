@@ -18,8 +18,8 @@ package cloud
 import (
 	"context"
 	"errors"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 	"io"
-	"mrfparse/pkg/mrfparse/utils"
 	"net/url"
 	"os"
 	"path/filepath"

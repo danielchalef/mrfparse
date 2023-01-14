@@ -16,7 +16,7 @@ limitations under the License.
 package cmd
 
 import (
-	"mrfparse/pkg/mrfparse/utils"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 	"os"
 	"runtime/pprof"
 	"strings"

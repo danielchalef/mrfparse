@@ -16,8 +16,8 @@ limitations under the License.
 package cmd
 
 import (
-	"mrfparse/pkg/mrfparse/mrf"
-	"mrfparse/pkg/mrfparse/utils"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/mrf"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 
 	"github.com/spf13/cobra"
 )

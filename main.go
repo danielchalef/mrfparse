@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "mrfparse/cmd"
+import "github.com/danielchalef/mrfparse/cmd"
 
 func main() {
 	cmd.Execute()
