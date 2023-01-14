@@ -3,7 +3,7 @@
 # A Go parser for _Transparency in Coverage_ MRF files.
 `mrfparse` is a memory and CPU efficient parser for _Transparency in Coverage_ Machine Readable Format (MRF) files. The parser is designed to be easily containerized and scaled on modern cloud container platforms (and potentially cloud function infrastructure).
 
-`mrfparse` is fast: Parsing out pricing and providers for the CMS' _500 shoppable services_ from an 80GB Anthem _in-network-rates_ fileset in NDJSON format to parquet takes <5 minutes on a 12-core workstation with container memory limited to 6GB. Doing the same from the gzip compressed source file takes an additional 10 minutes.
+`mrfparse` is fast: Parsing out pricing and providers for the CMS' _500 shoppable services_ from an 80GB Anthem _in-network-rates_ fileset in NDJSON format and writing to parquet takes <5 minutes on a 12-core workstation with container memory limited to 6GB. Doing the same from the 12GB gzip compressed source file takes an additional 10 minutes.
 
 Features:
 
