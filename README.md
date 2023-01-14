@@ -9,7 +9,7 @@ Features:
 
 - Outputs to a parquet dataset, allowing easy ingestion into data warehouses and data lakes.
 - Supports reading from HTTP, and S3 / GS cloud storage, and writing to S3 / GS cloud storage buckets.
-- Filter for a subset of CPT/HSPCS service codes (provided as a simple CSV file).
+- Filter for a subset of CPT/HCPCS service codes (provided as a simple CSV file).
 - Filters for only providers for whom pricing data is present in the MRF file, dropping extranous provider data.
 - Supports reading Gzip compressed MRF files.
 - The output schema is designed to support ingestion into graph databases.
@@ -19,7 +19,7 @@ As of July 1, 2022, _The Centers for Medicare and Medicaid Services (CMS)_ manda
 
 Working with MRF files is challenging:
 - Each payer's MRF dataset is tens to hundreds of terabytes of data and is updated monthly. No monthly deltas are available and individual JSON documents can be over 1TB in size.
-- Some payers have included provider data for providers for whom the MRF file does not have pricing data. That is, their are provider reference records where in_network rates are not present.
+- Some payers have included provider data for providers for whom the MRF file does not have pricing data. That is, there are provider reference records where in_network rates are not present.
 - Some payers have provided pricing data for services that providers do not offer.
 
 ## Usage
@@ -42,6 +42,13 @@ mrfparse pipeline -i gs://mrfdata/staging/2022-12-05_Innovation-Health-Plan-Inc.
 ```
 
 `mrfparse` operates in several stages each of which can be executed independently. See `mrfparse --help` for more options.
+
+## Requirements
+`mrfparse` makes extensive use of [`simdjson-go`](https://github.com/minio/simdjson-go) to parse MRF JSON documents. A CPU with both AVX2 and CLMUL instruction support is required (most modern Intel or AMD processors). Unfortunately, `simdjson-go` does not (yet) support ARM64 NEON.
+
+Other requirements:
+- 6GB of RAM (though I'd like to reduce this)
+- Adequate temporal storage for intermediate data files.
 
 ## Build and Installation
 Using `go install`:
@@ -97,11 +104,6 @@ Splitting an MRF JSON document into NDJSON using `jsplit` takes time. `jsplit` m
 ## Parquet Schema
 
 See the models in [`models/mrf.go`](pkg/mrfparse/models/mrf.go) for the parquet schema.
-
-## Requirements
-- A CPU with both AVX2 and CLMUL is required (the parser uses the [simdjson-go](https://github.com/minio/simdjson-go), which does not yet support ARM64 NEON)
-- 6GB of RAM (though I'd like to reduce this)
-- Adequate temporal storage for intermediate data files.
 
 ## How the core parser works
 An MRF file is split into a set of JSON documents using a fork of [`jsplit`](https://github.com/dolthub/jsplit) that has been modified to supportreading and writing to cloud storage and use as a Go module. `jsplit` generates a root document and set of `provider-reference` and `in-network-rates` files. These files are in NDJSON format, allowing them to be consumed memory efficently. They are parsed line by line using [`simdjson-go`](https://github.com/minio/simdjson-go) and output to a parquet dataset.
