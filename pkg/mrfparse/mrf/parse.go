@@ -17,12 +17,14 @@ package mrf
 
 import (
 	"context"
+	"os"
+	"path/filepath"
+	"strings"
+
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/cloud"
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/models"
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/parquet"
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
-	"path/filepath"
-	"strings"
 
 	"github.com/alitto/pond"
 	mapset "github.com/deckarep/golang-set/v2"
@@ -48,6 +50,18 @@ func Parse(inputPath, outputPath string, planID int64, serviceFile string) {
 	wc := make(chan []*models.Mrf, writerChannelSize)
 	// done channel for writers
 	done := make(chan bool)
+
+	// if outputPath is on the local filesystem and does not exist, create it
+	if !cloud.IsCloudURI(outputPath) {
+		// test if path already exists
+		_, err := os.Stat(outputPath)
+		if os.IsNotExist(err) {
+			err = os.MkdirAll(outputPath, os.ModePerm)
+			utils.ExitOnError(err)
+		} else {
+			utils.ExitOnError(err)
+		}
+	}
 
 	// Start the writer in a goroutine
 	writerPoolGroup.Submit(func() { parquet.Writer("mrf", outputPath, wc, done) })
