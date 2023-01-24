@@ -3,7 +3,7 @@ module github.com/danielchalef/mrfparse
 go 1.19
 
 require (
-	github.com/danielchalef/jsplit v0.0.1
+	github.com/danielchalef/jsplit v0.0.2
 	github.com/minio/simdjson-go v0.4.2
 )
 
@@ -53,6 +53,7 @@ require (
 	github.com/hexops/gotextdiff v1.0.3 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
+	github.com/libp2p/go-buffer-pool v0.1.0 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mattn/go-runewidth v0.0.14 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
