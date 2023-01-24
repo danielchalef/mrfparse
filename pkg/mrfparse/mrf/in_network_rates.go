@@ -19,11 +19,12 @@ import (
 	"bufio"
 	"context"
 	"fmt"
+	"io"
+	"strings"
+
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/cloud"
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/models"
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
-	"io"
-	"strings"
 
 	"github.com/minio/simdjson-go"
 )
@@ -155,6 +156,7 @@ func parseInObject(iter *simdjson.Iter, rootUUID string, serviceList StringSet) 
 	if err != nil {
 		return nil, err
 	}
+	log.Debug("Got bundled_codes: ", len(mrfListTmp), " records")
 
 	mrfList = append(mrfList, mrfListTmp...)
 
@@ -163,6 +165,8 @@ func parseInObject(iter *simdjson.Iter, rootUUID string, serviceList StringSet) 
 	if err != nil {
 		return nil, err
 	}
+
+	log.Debug("Got negotiated_rates: ", len(mrfListTmp), " records")
 
 	mrfList = append(mrfList, mrfListTmp...)
 
@@ -372,7 +376,7 @@ func parseNPServiceCodes(iter *simdjson.Iter, billingClass string) ([]string, er
 
 	if billingClass == "professional" && utils.TestElementNotPresent(err, "service_code") {
 		return nil, fmt.Errorf("service_code is missing from negotiated_prices for billing_class == professional")
-	} else if err != nil {
+	} else if err != nil && !utils.TestElementNotPresent(err, "service_code") {
 		return nil, err
 	}
 

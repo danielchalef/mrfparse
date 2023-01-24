@@ -16,9 +16,10 @@ limitations under the License.
 package mrf
 
 import (
+	"testing"
+
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/models"
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
-	"testing"
 
 	mapset "github.com/deckarep/golang-set/v2"
 	"github.com/stretchr/testify/assert"
@@ -305,7 +306,7 @@ func TestParseNeServiceCodesInstitutional(t *testing.T) {
 	iter := jp.Iter()
 
 	scs, err := parseNPServiceCodes(&iter, "institutional")
-	assert.True(t, utils.TestElementNotPresent(err, "negotiated_rate"))
+	assert.NoError(t, err)
 	assert.Nil(t, scs)
 }
 
