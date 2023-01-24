@@ -3,7 +3,7 @@
 # A Go parser for _Transparency in Coverage_ MRF files.
 `mrfparse` is a memory and CPU efficient parser for _Transparency in Coverage_ Machine Readable Format (MRF) files. The parser is designed to be easily containerized and scaled on modern cloud container platforms (and potentially cloud function infrastructure).
 
-`mrfparse` is fast: Parsing out pricing and providers for the CMS' _500 shoppable services_ from an 80GB Anthem _in-network-rates_ fileset in NDJSON format and writing to parquet takes <5 minutes on a 12-core workstation with container memory limited to 6GB. Doing the same from the 12GB gzip compressed source file takes an additional 10 minutes.
+`mrfparse` is fast: Parsing out pricing and providers for the CMS' _500 shoppable services_ from an 80GB Anthem _in-network-rates_ fileset in NDJSON format to parquet takes <5 minutes on a 12-core workstation with container memory limited to 6GB. Doing the same from the gzip compressed source file takes an additional ~5 minutes.
 
 Features:
 
@@ -99,6 +99,8 @@ tmp:
 Use either the `config.yaml` file or the `--services` flag to specify the location of the `services` file. The default location is `./services.csv`. A sample services file containing the CMS' _500 Shoppable Services_ may be found in the `data` folder in this repo.
 
 ### Tuning
+UPDATE: `jsplit` now makes use of pooled buffers and is much faster than it was when this was written. YMMV on the following.
+
 Splitting an MRF JSON document into NDJSON using `jsplit` takes time. `jsplit` makes heavy usage of the GC and can be sped up by setting a `GOGC` value far higher than the default of 200, at the expense of a non-linear increase in memory usage.
 
 ## Parquet Schema
