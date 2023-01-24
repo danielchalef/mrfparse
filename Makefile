@@ -20,7 +20,7 @@ all: build
 ## Build:
 build: ## Build your project
 	mkdir -p ./out/bin
-	GO111MODULE=on GOOS=linux GOARCH=amd64 $(GOCMD) build -o ./out/bin/$(BINARY_NAME) 
+	GO111MODULE=on GOOS=linux GOARCH=amd64 GOAMD64=v3 $(GOCMD) build -o ./out/bin/$(BINARY_NAME) 
 
 clean: ## Remove build related file
 	rm -f $(BINARY_NAME)
@@ -36,7 +36,7 @@ ifeq ($(EXPORT_RESULT), true)
 	GO111MODULE=off go get -u github.com/jstemmer/go-junit-report
 	$(eval OUTPUT_OPTIONS = | tee /dev/tty | go-junit-report -set-exit-code > junit-report.xml)
 endif
-	$(GOTEST) -v -parallel 4 -race ./... $(OUTPUT_OPTIONS)
+	GOAMD64=v3 $(GOTEST) -v -parallel 4 -race ./... $(OUTPUT_OPTIONS)
 
 coverage: ## Run the tests of the project and export the coverage
 	$(GOTEST) -cover -covermode=count -coverprofile=profile.cov ./...
