@@ -87,6 +87,7 @@ require (
 require (
 	github.com/alecthomas/assert/v2 v2.1.0
 	github.com/alitto/pond v1.8.2
+	github.com/avast/retry-go/v4 v4.3.2
 	github.com/rs/xid v1.4.0
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/viper v1.14.0

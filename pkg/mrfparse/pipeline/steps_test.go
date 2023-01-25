@@ -33,27 +33,30 @@ func TestNewParsePipeline(t *testing.T) {
 	viper.Set("tmp.path", "/tmp")
 
 	p := NewParsePipeline(inputPath, outputPath, serviceFile, planID)
-	assert.Equal(t, len(p.Steps), 3)
+	assert.Equal(t, len(p.Steps), 4)
 
-	splitStep, ok := p.Steps[0].(*SplitStep)
+	downloadStep, ok := p.Steps[0].(*DownloadStep)
 	assert.True(t, ok)
 
-	assert.Equal(t, splitStep.InputPath, inputPath)
-	assert.True(t, strings.HasPrefix(splitStep.OutputPath, "/tmp"))
+	assert.Equal(t, downloadStep.URL, inputPath)
+	assert.True(t, strings.HasPrefix(downloadStep.OutputPath, "/tmp"))
+
+	tmpPath := downloadStep.OutputPath
+
+	splitStep, ok := p.Steps[1].(*SplitStep)
+	assert.True(t, ok)
+	assert.Equal(t, splitStep.InputPath, tmpPath)
 	assert.True(t, splitStep.Overwrite)
 
-	tmpPath := splitStep.OutputPath
-
-	parseStep, ok := p.Steps[1].(*ParseStep)
+	parseStep, ok := p.Steps[2].(*ParseStep)
 	assert.True(t, ok)
-	assert.Equal(t, parseStep.InputPath, tmpPath)
 	assert.Equal(t, parseStep.OutputPath, outputPath)
 	assert.Equal(t, parseStep.ServiceFile, serviceFile)
 	assert.Equal(t, parseStep.PlanID, planID)
 
-	cleanupStep, ok := p.Steps[2].(*CleanStep)
+	cleanupStep, ok := p.Steps[3].(*CleanStep)
 	assert.True(t, ok)
-	assert.Equal(t, cleanupStep.TmpPath, tmpPath)
+	assert.True(t, strings.HasPrefix(tmpPath, cleanupStep.TmpPath))
 
 	err := os.RemoveAll(tmpPath)
 	assert.NoError(t, err)
