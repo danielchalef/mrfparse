@@ -16,10 +16,14 @@ limitations under the License.
 package pipeline
 
 import (
+	"io"
+	"os"
+	"path/filepath"
+
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/http"
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/mrf"
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/split"
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
-	"os"
 
 	"github.com/spf13/viper"
 )
@@ -37,10 +41,13 @@ import (
 // default system tmp path will be used.
 func NewParsePipeline(inputPath, outputPath, serviceFile string, planID int64) *Pipeline {
 	var (
-		err        error
-		tmpPath    string
-		steps      []Step
-		cfgTmpPath = viper.GetString("tmp.path")
+		err          error
+		tmpPath      string
+		srcFilePath  string
+		tmpPathSrc   string
+		tmpPathSplit string
+		steps        []Step
+		cfgTmpPath   = viper.GetString("tmp.path")
 	)
 
 	if cfgTmpPath != "" {
@@ -51,14 +58,23 @@ func NewParsePipeline(inputPath, outputPath, serviceFile string, planID int64) *
 
 	utils.ExitOnError(err)
 
+	tmpPathSrc = filepath.Join(tmpPath, "src")
+	tmpPathSplit = filepath.Join(tmpPath, "split")
+
+	srcFilePath = filepath.Join(tmpPathSrc, filepath.Base(inputPath))
+
 	steps = []Step{
+		&DownloadStep{
+			URL:        inputPath,
+			OutputPath: srcFilePath,
+		},
 		&SplitStep{
-			InputPath:  inputPath,
-			OutputPath: tmpPath,
+			InputPath:  srcFilePath,
+			OutputPath: tmpPathSplit,
 			Overwrite:  true,
 		},
 		&ParseStep{
-			InputPath:   tmpPath,
+			InputPath:   tmpPathSplit,
 			OutputPath:  outputPath,
 			ServiceFile: serviceFile,
 			PlanID:      planID,
@@ -69,6 +85,46 @@ func NewParsePipeline(inputPath, outputPath, serviceFile string, planID int64) *
 	}
 
 	return New(steps...)
+}
+
+// DownloadStep downloads a file from a URL to a local path using http.DownloadReader
+type DownloadStep struct {
+	URL        string
+	OutputPath string
+}
+
+func (s *DownloadStep) Run() {
+	var (
+		o   string
+		rd  io.ReadCloser
+		wr  io.WriteCloser
+		err error
+		n   int64
+	)
+
+	o = filepath.Dir(s.OutputPath)
+
+	err = os.MkdirAll(o, 0o755)
+	utils.ExitOnError(err)
+
+	rd, err = http.DownloadReader(s.URL)
+	utils.ExitOnError(err)
+
+	defer rd.Close()
+
+	wr, err = os.Create(s.OutputPath)
+	utils.ExitOnError(err)
+
+	defer wr.Close()
+
+	n, err = io.Copy(wr, rd)
+	utils.ExitOnError(err)
+
+	log.Infof("Downloaded %d bytes from %s to %s", n, s.URL, s.OutputPath)
+}
+
+func (s *DownloadStep) Name() string {
+	return "Download"
 }
 
 // SplitStep splits the input JSON object file into NDJSON files using split.File
