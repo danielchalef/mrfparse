@@ -1,6 +1,8 @@
 # syntax=docker/dockerfile:1
 FROM golang:1.19 AS build
 
+ARG TARGETARCH
+
 WORKDIR /app
 
 COPY go.mod .
@@ -11,7 +13,11 @@ RUN go mod download
 COPY cmd cmd
 COPY pkg pkg
 
-RUN GOOS=linux GOARCH=amd64 GOAMD64=v3 go build -ldflags="-w -s" -o /mrfparse 
+RUN if [ "$TARGETARCH" = "amd64" ]; then \
+        GOARCH=amd64 GOAMD64=v3 go build -ldflags="-w -s" -o /mrfparse ; \
+    else \
+        go build -ldflags="-w -s" -o /mrfparse; \
+    fi
 
 FROM debian:bullseye-slim as runtime
 

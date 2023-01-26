@@ -7,6 +7,12 @@ SERVICE_PORT?=
 DOCKER_REGISTRY?=
 EXPORT_RESULT?=false # for CI please set EXPORT_RESULT to true
 
+BUILD_VAR=
+ARCH=$(shell uname -m)
+ifeq ($(ARCH),x86_64)
+	BUILD_VAR+=GOARCH=amd64 GOAMD64=v3
+endif
+
 GREEN  := $(shell tput -Txterm setaf 2)
 YELLOW := $(shell tput -Txterm setaf 3)
 WHITE  := $(shell tput -Txterm setaf 7)
@@ -20,7 +26,7 @@ all: build
 ## Build:
 build: ## Build your project
 	mkdir -p ./out/bin
-	GO111MODULE=on GOOS=linux GOARCH=amd64 GOAMD64=v3 $(GOCMD) build -o ./out/bin/$(BINARY_NAME) 
+	GO111MODULE=on $(BUILD_VAR) $(GOCMD) build -o ./out/bin/$(BINARY_NAME) 
 
 clean: ## Remove build related file
 	rm -f $(BINARY_NAME)
@@ -53,7 +59,7 @@ lint:
 
 ## Docker:
 docker-build: ## Use the dockerfile to build the container
-	docker build --rm --tag $(BINARY_NAME) .
+	DOCKER_BUILDKIT=1 docker build --rm --tag $(BINARY_NAME) .
 
 docker-release: ## Release the container with tag latest and version
 	docker tag $(BINARY_NAME) $(DOCKER_REGISTRY)$(BINARY_NAME):latest
