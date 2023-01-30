@@ -108,7 +108,7 @@ Splitting an MRF JSON document into NDJSON using `jsplit` takes time. `jsplit` m
 See the models in [`models/mrf.go`](pkg/mrfparse/models/mrf.go) for the parquet schema.
 
 ## How the core parser works
-An MRF file is split into a set of JSON documents using a fork of [`jsplit`](https://github.com/dolthub/jsplit) that has been modified to supportreading and writing to cloud storage and use as a Go module. `jsplit` generates a root document and set of `provider-reference` and `in-network-rates` files. These files are in NDJSON format, allowing them to be consumed memory efficently. They are parsed line by line using [`simdjson-go`](https://github.com/minio/simdjson-go) and output to a parquet dataset.
+An MRF file is split into a set of JSON documents using a fork of [`jsplit`](https://github.com/dolthub/jsplit) that has been modified to support reading and writing to cloud storage and use as a Go module. `jsplit` generates a root document and set of `provider-reference` and `in-network-rates` files. These files are in NDJSON format, allowing them to be consumed memory efficently. They are parsed line by line using [`simdjson-go`](https://github.com/minio/simdjson-go) and output to a parquet dataset.
 
 `in-network-rates` files are parsed first, allowing us to filter against our `services` list and build up a list of providers for whom we have pricing data. This provider list is then used to filter the `provider-reference` files. 
 
