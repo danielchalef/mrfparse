@@ -48,7 +48,6 @@ func DownloadReader(fileURL string) (io.ReadCloser, error) {
 	err = retry.Do(func() error {
 		r, err = httpClient.Get(fileURL) //nolint:bodyclose // Embedded in retry confusing linter
 		if err != nil {
-			r.Body.Close()
 			return err
 		}
 		return nil
