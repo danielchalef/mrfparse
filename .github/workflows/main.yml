@@ -12,38 +12,111 @@ on:
 jobs:
 
   build:
+    strategy:
+      matrix:
+        arch:
+          - "amd64"
+          - "aarch64"
+
+    name: "Build - ${{ matrix.arch }}"
+
     runs-on: ubuntu-latest
     steps:
-    
-    # Get values for cache paths to be used in later steps
-    - id: go-cache-paths
-      run: |
-        echo "go-build=$(go env GOCACHE)" >> $GITHUB_OUTPUT
-        echo "go-mod=$(go env GOMODCACHE)" >> $GITHUB_OUTPUT
-    
-    - uses: actions/checkout@v3
 
-    - name: Set up Go
+    - name: Checkout - amd64
+      if: matrix.arch == 'amd64'
+      uses: actions/checkout@v3
+
+    - name: Checkout - aarch64
+      if: matrix.arch == 'aarch64'
+      uses: actions/checkout@v3
+      with:
+        path: 'repo'
+
+    - name: Go module cache - amd64
+      if: matrix.arch == 'amd64'
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.cache/go-build
+          ~/go/pkg/mod
+        key: ${{ runner.os }}-${{ matrix.arch }}-go-${{ hashFiles('**/go.sum') }}
+        restore-keys: |
+          ${{ runner.os }}-${{ matrix.arch }}-go-
+
+    - name: Go module cache - aarch64
+      if: matrix.arch == 'aarch64'
+      uses: actions/cache@v3
+      with:
+        path: |
+          ${{ github.workspace }}/go/.cache/go-build
+          ${{ github.workspace }}/go/pkg/mod
+        key: ${{ runner.os }}-${{ matrix.arch }}-go-${{ hashFiles('**/go.sum') }}
+        restore-keys: |
+          ${{ runner.os }}-${{ matrix.arch }}-go-
+
+    - name: Set up Go - amd64
+      if: matrix.arch == 'amd64'
       uses: actions/setup-go@v3
       with:
         go-version: 1.19
 
-    # Cache go build cache, used to speedup go test
-    - name: Go Build Cache
-      uses: actions/cache@v3
-      with:
-        path: ${{ steps.go-cache-paths.outputs.go-build }}
-        key: ${{ runner.os }}-go-build-${{ hashFiles('**/go.sum') }}
-
-    # Cache go mod cache, used to speedup builds
-    - name: Go Mod Cache
-      uses: actions/cache@v3
-      with:
-        path: ${{ steps.go-cache-paths.outputs.go-mod }}
-        key: ${{ runner.os }}-go-mod-${{ hashFiles('**/go.sum') }}
-
-    - name: Build
+    - name: Build - amd64
+      if: matrix.arch == 'amd64'
       run: make
 
-    - name: Test
+    - name: Run tests - amd64
+      if: matrix.arch == 'amd64'
       run: make test
+
+    - name: Run tests - aarch64
+      if: matrix.arch == 'aarch64'
+      uses: pguyot/arm-runner-action@v2
+      id: arm-image
+      with:
+        cpu: 'cortex-a53'
+        base_image: 'https://raspi.debian.net/tested/20230102_raspi_4_bullseye.img.xz'
+        bind_mount_repository: true
+        import_github_env: true
+        image_additional_mb: 2000
+        # language=Shell script
+        commands: |
+          echo '::group::Update and install OS dependencies'
+          apt update \
+              && apt upgrade -y \
+              && apt install -y \
+                build-essential \
+                ca-certificates \
+                curl \
+                gcc \
+                openssl \
+                tar \
+                unzip \
+                wget
+          echo '::endgroup'
+          
+          echo '::group::Ensure go is installed'
+          if ! [ -d "$(pwd)/go" ]; then
+            wget -q https://go.dev/dl/go1.19.5.linux-arm64.tar.gz
+            tar -C "$(pwd)/" -xzf go1.19.5.linux-arm64.tar.gz
+          fi
+          echo '::endgroup'
+          
+          echo '::Setup GOPATH and PATH'
+          export GOPATH="/$(pwd)/go"
+          export PATH="$GOPATH/bin:$PATH"
+          echo "GOPATH=$GOPATH"
+          echo "PATH=$PATH"
+          echo '::endgroup'
+          
+          # move into repo dir
+          cd repo \
+            && echo '::group::go build...' \
+            && go build \
+            && echo '::endgroup' \
+            && echo '::group::go vet...' \
+            && go vet ./... \
+            && echo '::endgroup' \
+            && echo '::group::go test...' \
+            && go test ./... \
+            && echo '::endgroup'
