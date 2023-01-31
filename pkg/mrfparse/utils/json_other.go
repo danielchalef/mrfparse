@@ -1,4 +1,4 @@
-//go:build !(linux && amd64)
+//go:build !amd64 && !(linux || darwin)
 
 /*
 Copyright © 2023 Daniel Chalef
