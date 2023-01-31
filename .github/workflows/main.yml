@@ -49,8 +49,7 @@ jobs:
       uses: actions/cache@v3
       with:
         path: |
-          ${{ github.workspace }}/go/.cache/go-build
-          ${{ github.workspace }}/go/pkg/mod
+          ${{ github.workspace }}/go
         key: ${{ runner.os }}-${{ matrix.arch }}-go-${{ hashFiles('**/go.sum') }}
         restore-keys: |
           ${{ runner.os }}-${{ matrix.arch }}-go-
