@@ -108,13 +108,11 @@ func CheckCPU() {
 
 // ParseJSON parses []byte as Json document, while string is assumed to be NDJson
 func ParseJSON[T *[]byte | *string](s T, r *simdjson.ParsedJson) (*simdjson.ParsedJson, error) {
-	CheckCPU()
-
 	switch p := any(s).(type) {
 	case *[]byte:
-		return simdjson.Parse(*p, r)
+		return simdParse(*p, r)
 	case *string:
-		return simdjson.ParseND([]byte(*p), r)
+		return simdParseND([]byte(*p), r)
 	default:
 		return nil, fmt.Errorf("invalid type")
 	}

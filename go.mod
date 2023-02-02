@@ -88,6 +88,7 @@ require (
 	github.com/alecthomas/assert/v2 v2.1.0
 	github.com/alitto/pond v1.8.2
 	github.com/avast/retry-go/v4 v4.3.2
+	github.com/kiwicom/fakesimdjson v0.0.0-20230125075857-80f4b896a785
 	github.com/rs/xid v1.4.0
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/viper v1.14.0
@@ -97,7 +98,7 @@ require (
 )
 
 require (
-	github.com/klauspost/compress v1.15.14 // indirect
+	github.com/klauspost/compress v1.15.15 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.3 // indirect
 	github.com/sirupsen/logrus v1.9.0
 	golang.org/x/sys v0.4.0 // indirect

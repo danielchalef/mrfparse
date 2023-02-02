@@ -50,10 +50,16 @@ Other requirements:
 - 6GB of RAM (though I'd like to reduce this)
 - Adequate temporal storage for intermediate data files.
 
+### Note on ARM Compatibility
+To enable local testing with non-amd64 cpu's, such as Apple's new M# series of machines, this utility makes use of the
+[fakesimdjson](https://github.com/kiwicom/fakesimdjson) package.  When using this simdjson simulacrum parsing speed and
+efficiency will be drastically reduced. It is therefore _not_ recommended to use this on ARM-based machines in a 
+production environment.
+
 ## Build and Installation
 Using `go install`:
 ```bash
-go install github.com/danielchalef/mrfparse
+go install github.com/danielchalef/mrfparse@latest
 ```
 
 Use the `Makefile` to build the binary or container. 
