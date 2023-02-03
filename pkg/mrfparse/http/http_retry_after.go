@@ -45,7 +45,8 @@ var (
 func RetryAfterDelay(n uint, err error, config *retry.Config) time.Duration {
 	var (
 		t time.Time
-		e *RetryAfterError
+
+		e = new(RetryAfterError)
 	)
 
 	if errors.As(err, e) {
@@ -77,7 +78,7 @@ func (err RetryAfterError) Error() string {
 	)
 }
 
-// Parse tries to parse the value as seconds or HTTP date.
+// ParseRetryAfter tries to parse the value as seconds or HTTP date.
 func ParseRetryAfter(retryAfter string) (time.Time, error) {
 	if dur, err := ParseSeconds(retryAfter); err == nil {
 		now := time.Now()
