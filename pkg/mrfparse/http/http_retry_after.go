@@ -78,7 +78,7 @@ func (err RetryAfterError) Error() string {
 	)
 }
 
-// Parse tries to parse the value as seconds or HTTP date.
+// ParseRetryAfter tries to parse the value as seconds or HTTP date.
 func ParseRetryAfter(retryAfter string) (time.Time, error) {
 	if dur, err := ParseSeconds(retryAfter); err == nil {
 		now := time.Now()
