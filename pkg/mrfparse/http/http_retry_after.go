@@ -45,7 +45,8 @@ var (
 func RetryAfterDelay(n uint, err error, config *retry.Config) time.Duration {
 	var (
 		t time.Time
-		e *RetryAfterError
+
+		e = new(RetryAfterError)
 	)
 
 	if errors.As(err, e) {
