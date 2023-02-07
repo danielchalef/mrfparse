@@ -15,11 +15,17 @@ limitations under the License.
 */
 package utils
 
-import "github.com/rs/xid"
+import (
+	"testing"
 
-// GetUniqueID generates an xid, a fast, sortable globally unique id that is only 20 characters long.
-func GetUniqueID() string {
-	guid := xid.New()
+	"github.com/stretchr/testify/assert"
+)
 
-	return guid.String()
+// test Sha256Sum
+func TestSha256Sum(t *testing.T) {
+	s := "filename_test.gz"
+	hash_expected := "cc13984a42a92b86c46c861655e91bda947325361fe6427a611be61053366877"
+
+	hash := Sha256Sum(s)
+	assert.Equal(t, hash_expected, hash)
 }
