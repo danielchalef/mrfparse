@@ -23,7 +23,7 @@ Working with MRF files is challenging:
 - Some payers have provided pricing data for services that providers do not offer.
 
 ## Usage
-The following examples illustrate using the binary from a command line. It is strongly recommended that you use the containerized parser and run it on a cloud container platform, allowing many files to be parsed concurrenlty.
+The following examples illustrate using the binary from a command line. 
 
 
 Parse a gzipped MRF file hosted on a payer's website and output the parquet dataset to an S3 bucket
@@ -42,6 +42,11 @@ mrfparse pipeline -i gs://mrfdata/staging/2022-12-05_Innovation-Health-Plan-Inc.
 ```
 
 `mrfparse` operates in several stages each of which can be executed independently. See `mrfparse --help` for more options.
+
+### Production Use
+It is strongly recommended that you use the containerized parser and run it on a cloud container platform, allowing many files to be parsed concurrenlty. The "all-in-one" `pipeline` is not recommended for production use. For more resilient data pipelines, it is recommended that you use something like Airflow to run each of the download, `split` and `parse` steps sequentially in a recoverable way.
+
+Additionally, see the note below regarding not using `mrfparse` on ARM64 processors in production.
 
 ## Requirements
 `mrfparse` makes extensive use of [`simdjson-go`](https://github.com/minio/simdjson-go) to parse MRF JSON documents. A CPU with both AVX2 and CLMUL instruction support is required (most modern Intel or AMD processors). Unfortunately, `simdjson-go` does not (yet) support ARM64 NEON.
