@@ -43,7 +43,6 @@ func DownloadReader(fileURL string) (io.ReadCloser, error) {
 	)
 
 	HTTPTimeOut = time.Duration(viper.GetInt("pipeline.download_timeout")) * time.Minute
-	log.Info("HTTP timeout set to ", HTTPTimeOut)
 
 	var httpClient = &http.Client{
 		Timeout: HTTPTimeOut,
