@@ -19,6 +19,7 @@ import (
 	"io"
 	"os"
 	"path/filepath"
+	"strings"
 
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/http"
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/mrf"
@@ -62,6 +63,7 @@ func NewParsePipeline(inputPath, outputPath, serviceFile string, planID int64) *
 	tmpPathSplit = filepath.Join(tmpPath, "split")
 
 	srcFilePath = filepath.Join(tmpPathSrc, filepath.Base(inputPath))
+	srcFilePath = strings.Split(srcFilePath, "?")[0]
 
 	steps = []Step{
 		&DownloadStep{
