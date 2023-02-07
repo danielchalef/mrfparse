@@ -28,7 +28,7 @@ import (
 )
 
 const MaxRetryAttempts = 10
-const HTTPTimeOut = 2 * time.Minute
+const HTTPTimeOut = 10 * time.Minute
 
 var log = utils.GetLogger()
 
