@@ -25,7 +25,7 @@ import (
 )
 
 func TestNewParsePipeline(t *testing.T) {
-	inputPath := "input"
+	inputPath := "http://server.com/somepath/input.gz?somestuff"
 	outputPath := "output"
 	serviceFile := "service.csv"
 	planID := int64(1)
@@ -42,6 +42,7 @@ func TestNewParsePipeline(t *testing.T) {
 	assert.True(t, strings.HasPrefix(downloadStep.OutputPath, "/tmp"))
 
 	tmpPath := downloadStep.OutputPath
+	assert.False(t, strings.Contains(tmpPath, "?"))
 
 	splitStep, ok := p.Steps[1].(*SplitStep)
 	assert.True(t, ok)
