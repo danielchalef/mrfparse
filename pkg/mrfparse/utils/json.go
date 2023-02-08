@@ -28,6 +28,7 @@ func GetElementValue[T string | int64 | float64](path string, iter *simdjson.Ite
 
 	e, err := iter.FindElement(nil, path)
 	if err != nil {
+		log.Tracef("Failed to find element: %s - %v", path, err)
 		return ret, err
 	}
 
@@ -73,6 +74,7 @@ func GetArrayElementAsSlice[T string | int64 | float64](path string, iter *simdj
 func GetArrayForElement(path string, iter *simdjson.Iter) (*simdjson.Array, error) {
 	e, err := iter.FindElement(nil, path)
 	if err != nil {
+		log.Tracef("Failed to find array element: %s - %v", path, err)
 		return nil, err
 	}
 
