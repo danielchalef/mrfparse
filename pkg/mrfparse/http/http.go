@@ -23,27 +23,30 @@ import (
 
 	"github.com/avast/retry-go/v4"
 	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
+	"github.com/spf13/viper"
 
 	"time"
 )
 
 const MaxRetryAttempts = 10
-const HTTPTimeOut = 10 * time.Minute
 
 var log = utils.GetLogger()
-
-var httpClient = &http.Client{
-	Timeout: HTTPTimeOut,
-}
 
 // DownloadFileReader downloads a file from the given URL and returns an io.ReadCloser.
 // The caller is responsible for closing the returned io.ReadCloser.
 // DownloadFilereader attempts to retry the download if it receives a RetryAfterDelay error.
 func DownloadReader(fileURL string) (io.ReadCloser, error) {
 	var (
-		err error
-		r   *http.Response
+		err         error
+		r           *http.Response
+		HTTPTimeOut time.Duration
 	)
+
+	HTTPTimeOut = time.Duration(viper.GetInt("pipeline.download_timeout")) * time.Minute
+
+	var httpClient = &http.Client{
+		Timeout: HTTPTimeOut,
+	}
 
 	err = retry.Do(func() error {
 		r, err = httpClient.Get(fileURL) //nolint:bodyclose // Embedded in retry confusing linter

@@ -102,6 +102,8 @@ writer:
   max_rows_per_group: 1_000_000
 tmp:
   path: /tmp
+pipeline:
+  download_timeout: 20          # minutes
 ```
 
 ### The `services` file
