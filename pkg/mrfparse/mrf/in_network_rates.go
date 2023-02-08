@@ -265,10 +265,11 @@ func parseNegotiatedRates(iter *simdjson.Iter, inUUID string) ([]*models.Mrf, er
 			pr, err = utils.GetArrayElementAsSlice[string]("provider_references", &neIter)
 			// if provider_references is missing, parse provider_groups
 			if utils.TestElementNotPresent(err, "provider_references") {
+				log.Trace("provider_references not present, parsing provider_groups")
 				// Add a record to capture the NR / parent relationship
 				mrfList = append(mrfList, &models.Mrf{UUID: uuid, ParentUUID: inUUID})
 
-				prMrfList, err = parseProviderGroups(iter, uuid, prParent)
+				prMrfList, err = parseProviderGroups(&neIter, uuid, prParent)
 				if err != nil {
 					return nil, err
 				}
