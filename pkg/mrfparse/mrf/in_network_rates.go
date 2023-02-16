@@ -52,8 +52,8 @@ func parseInNetworkRates(filename, rootUUUID string, serviceList StringSet) {
 
 	scanner := bufio.NewScanner(f)
 
-	buf := make([]byte, MaxLineLength)
-	scanner.Buffer(buf, MaxLineLength)
+	buf := make([]byte, LineBuffer)
+	scanner.Buffer(buf, MaxLineBuffer)
 
 	for scanner.Scan() {
 		line = scanner.Text()
@@ -74,14 +74,19 @@ func parseInNetworkRates(filename, rootUUUID string, serviceList StringSet) {
 			lineCount++
 		}
 
-		if totalLineCount%5000 == 0 {
+		if totalLineCount%200 == 0 {
 			log.Debug("Read ", totalLineCount, " lines")
 		}
 
 		totalLineCount++
 	}
 
+	if err := scanner.Err(); err != nil {
+		utils.ExitOnError(err)
+	}
+
 	if lineCount > 0 {
+		log.Debug("Read ", totalLineCount, " lines")
 		lines := strBuilder.String()
 
 		inPoolGroup.Submit(func() {
@@ -410,6 +415,8 @@ func parseInRoot(iter *simdjson.Iter, rootUUID string, serviceList StringSet) (*
 		// This is not a service we care about. Skip it.
 		return nil, &NotInListError{inBillingCode}
 	}
+
+	log.Tracef("Found service %s %s", inBillingCodeType, inBillingCode)
 
 	name, err := utils.GetElementValue[string]("name", iter)
 	if err != nil {

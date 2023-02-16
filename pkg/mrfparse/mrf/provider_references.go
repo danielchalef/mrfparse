@@ -19,12 +19,13 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	"github.com/danielchalef/mrfparse/pkg/mrfparse/cloud"
-	"github.com/danielchalef/mrfparse/pkg/mrfparse/models"
-	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 	"io"
 	"strings"
 	"sync/atomic"
+
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/cloud"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/models"
+	"github.com/danielchalef/mrfparse/pkg/mrfparse/utils"
 
 	"github.com/minio/simdjson-go"
 )
@@ -57,8 +58,8 @@ func parseProviderReference(filename, rootUUID string) {
 
 	scanner := bufio.NewScanner(f)
 
-	buf := make([]byte, MaxLineLength)
-	scanner.Buffer(buf, MaxLineLength)
+	buf := make([]byte, LineBuffer)
+	scanner.Buffer(buf, MaxLineBuffer)
 
 	for scanner.Scan() {
 		// Build a NDJSON string with LinesAtATime lines
@@ -86,6 +87,10 @@ func parseProviderReference(filename, rootUUID string) {
 		}
 
 		totalLineCount++
+	}
+
+	if err := scanner.Err(); err != nil {
+		utils.ExitOnError(err)
 	}
 
 	// Ensure we parse the last few lines if we've not yet reached LinesAtATime
