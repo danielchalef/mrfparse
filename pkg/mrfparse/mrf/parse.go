@@ -33,7 +33,9 @@ import (
 const MaxWorkers int = 5
 const MaxCapacity int = 4
 
-const MaxLineLength int = 5000000 // bytes
+const LineBuffer int = 5000000           // bytes
+const MaxLineBuffer int = LineBuffer * 5 // bytes
+
 type StringSet mapset.Set[string]
 
 var log = utils.GetLogger()
