@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM golang:1.19 AS build
+FROM golang:1.19.12-bullseye AS build
 
 ARG TARGETARCH
 
@@ -19,7 +19,7 @@ RUN if [ "$TARGETARCH" = "amd64" ]; then \
         go build -ldflags="-w -s" -o /mrfparse; \
     fi
 
-FROM debian:bullseye-slim as runtime
+FROM debian:bullseye-20230725-slim AS runtime
 
 RUN mkdir /app
 WORKDIR /app
